@@ -1,7 +1,5 @@
 # LLM parallelisms in C, spelled out
 
-You like [makemore](https://github.com/karpathy/makemore/tree/master)? You like [llm.c](https://github.com/karpathy/llm.c)? You love `parallelisms`!
-
 `parallelisms` is an educational library which implements SOTA LLM parallelisms in pure C. 
 It aims to have a simple, spelled out implementations for maximum clarity. Currently supports:
   - Data parallel [[code](https://github.com/EugenHotaj/ml.c/blob/main/train_dp.c)]
