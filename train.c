@@ -12,7 +12,6 @@
 //   [2] https://github.com/karpathy/makemore 
 
 
-
 #include <stdlib.h>
 #include <string.h>
 #include "src/data.c"
