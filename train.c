@@ -5,7 +5,7 @@
 // special parallelisms applied.
 //
 // To run:
-//     mpicc -Ofast parallelisms/train.c && mpirun -n 1 a.out
+//     mpicc -O3 parallelisms/train.c && mpirun -n 1 a.out
 //
 // Inspired by Bengio et. al [1] and Karpath's makemore [2].
 //   [1] https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf

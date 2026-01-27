@@ -1,7 +1,7 @@
 // Data parallel training loop. 
 // 
 // To run:
-//     mpicc -Ofast parallelisms/train_dp.c && mpirun -n <num-ranks> a.out
+//     mpicc -O3 parallelisms/train_dp.c && mpirun -n <num-ranks> a.out
 
 #include <mpi.h>
 #include <stdlib.h>

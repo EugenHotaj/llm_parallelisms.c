@@ -6,7 +6,7 @@
 // Optimizer parameter sharding is not (currently) supported because we use SGD.
 // 
 // To run:
-//     mpicc -Ofast parallelisms/train_dp.c && mpirun -n <num-ranks> a.out
+//     mpicc -O3 parallelisms/train_dp.c && mpirun -n <num-ranks> a.out
 //
 // [1]: https://arxiv.org/abs/1910.02054
 

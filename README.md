@@ -17,14 +17,14 @@ The only dependency is OpenMPI which can be downloaded [here](https://docs.open-
 OpenMPI, you can compile and run any of the training scripts, for example `train_fsdp.c`:
 
 ```
-mpicc -Ofast train_fsdp.c && mpirun -n 4 a.out
+mpicc -O3 train_fsdp.c && mpirun -n 4 a.out
 ```
 
 Here `-n` specifies the number of FSDP shards. If you don't have enough cores for the desired parallelism level, you can tell OpenMPI to oversubscribe the cores. For example, here
 is how I run 3d parallelism on my 8 core MacBook Air:
 
 ```
-mpicc -Ofast train_3d.c && mpirun -n 24 --map-by=:oversubscribe a.out --tp 4 --dp 2
+mpicc -O3 train_3d.c && mpirun -n 24 --map-by=:oversubscribe a.out --tp 4 --dp 2
 ```
 
 This will tell OpenMPI to run with 24 shards and the training script will use tensor parallelism of 4, (fully sharded) data parallelism of 2, and pipeline parallelism of 3 (this is always fixed).

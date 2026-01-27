@@ -1,7 +1,7 @@
 // Tensor parallel (i.e. Megatron-LM [1]) training loop.
 //
 // To run:
-//     mpicc -Ofast parallelisms/train_tp.c && mpirun -n <num-ranks> a.out
+//     mpicc -O3 parallelisms/train_tp.c && mpirun -n <num-ranks> a.out
 //
 // [1]: https://arxiv.org/abs/1909.08053
 

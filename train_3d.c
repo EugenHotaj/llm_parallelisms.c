@@ -8,7 +8,7 @@
 // example, Llama 3 405B [1] was pretrained using 3d parallelism. 
 // 
 // To run:
-//     mpicc -Ofast parallelisms/train_fsdp.c &&
+//     mpicc -O3 parallelisms/train_fsdp.c &&
 //     mpirun -n <num-ranks> --map-by=:oversubscribe a.out --tp=<tp-ranks> --dp=<dp-ranks>
 //
 // [1]: https://arxiv.org/pdf/2407.21783

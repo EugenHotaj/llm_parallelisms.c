@@ -1,7 +1,7 @@
 // Pipeline parallel training loop.
 //
 // To run:
-//     mpicc -Ofast parallelisms/train_pp.c && mpirun -n 3 a.out
+//     mpicc -O3 parallelisms/train_pp.c && mpirun -n 3 a.out
 
 #include <mpi.h>
 #include <stdlib.h>
